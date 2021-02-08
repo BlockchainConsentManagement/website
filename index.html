@@ -10,7 +10,7 @@
 <body onload="w3_openLink('home')">
 
     <!-- Sidebar/menu -->
-    <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding"
+    <nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding"
         style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
             style="width:100%;font-size:22px">Close Menu</a>
@@ -18,16 +18,21 @@
             <h3 class="w3-padding-64"><b>Temp</b></h3>
         </div>
         <div class="w3-bar-block">
-            <a href="#home" onclick="w3_openLink('home')" class="w3-bar-item w3-button w3-hover-white">Home</a>
-            <a href="#blockchain" onclick="w3_openLink('blockchain')"
+            <a href="#home" id="linkhome" onclick="w3_openLink('home')"
+                class="w3-bar-item w3-button w3-hover-white w3-active-indigo">Home</a>
+            <a href="#team" id="linkteam" onclick="w3_openLink('team')"
+                class="w3-bar-item w3-button w3-hover-white">Team</a>
+            <!-- <a href="#blockchain" id="linkblockchain" onclick="w3_openLink('blockchain')"
                 class="w3-bar-item w3-button w3-hover-white">Blockchain</a>
-            <a href="#management" onclick="w3_openLink('management')"
+            <a href="#management" id="linkmanagement" onclick="w3_openLink('management')"
                 class="w3-bar-item w3-button w3-hover-white">Consent
-                Management</a>
-            <a href="#demo" onclick="w3_openLink('demo')" class="w3-bar-item w3-button w3-hover-white">Demo</a>
-            <a href="#results" onclick="w3_openLink('results')" class="w3-bar-item w3-button w3-hover-white">Results</a>
-            <a href="#team" onclick="w3_openLink('team')" class="w3-bar-item w3-button w3-hover-white">Team</a>
-            <a href="#contact" onclick="w3_openLink('contact')" class="w3-bar-item w3-button w3-hover-white">Contact
+                Management</a> -->
+            <a href="#demo" id="linkdemo" onclick="w3_openLink('demo')"
+                class="w3-bar-item w3-button w3-hover-white">Demo</a>
+            <a href="#results" id="linkresults" onclick="w3_openLink('results')"
+                class="w3-bar-item w3-button w3-hover-white">Results</a>
+            <a href="#contact" id="linkcontact" onclick="w3_openLink('contact')"
+                class="w3-bar-item w3-button w3-hover-white">Contact
                 Us</a>
         </div>
     </nav>
@@ -44,55 +49,41 @@
 
     <!-- !PAGE CONTENT! -->
     <div class="w3-main" style="margin-left:340px;margin-right:40px">
-        <div class="w3-container" id="img">
-            <img src="https://services.priv.gc.ca/quiz//WET/gcweb-opc/assets/opc-blk-en.png"></img>
-
-        </div>
         <!-- Header -->
         <div class="w3-container" id="home" style="margin-top:80px">
             <h1 class="w3-jumbo"><b></b></h1>
-            <h1 class="w3-xxxlarge w3-text-red"><b>Home</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
-        </div>
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Home</b></h1>
+            <hr style="width:50px;border:1px solid indigo" class="w3-round">
+            <h2 class="w3-xlarge w3-text-indigo">Title of project: Exploring Blockchain for Consent and Privacy Data
+                Management</h2>
+            <p>The objective of this project is to explore blockchain technology and experiment with it for enhanced
+                data security and personal information management for individuals, corporations, government entities,
+                and public institutions. The vision is to design and develop a platform where data can be easily and
+                securely contextually shared across systems, with individuals as the owners of their data and control
+                the flow of their personal information. The proposed blockchain-based platform would reduce the risk of
+                unauthorized access and data manipulation, and benefit everyone from private and public sector
+                organizations to clinical trials, and Canadian citizens no longer need to spend time filling out forms
+                with information they have provided many times already. The project will create awareness of privacy
+                issues and promote best practices for protecting personal information of Canadians through a set of
+                application programming interfaces, and will produce a proof of concept prototype of the proposes
+                platform.</p>
 
-        <!-- blockchain -->
-        <div class="w3-container" id="blockchain" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Blockchain</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
-            <p></p>
-            <p>
-            </p>
-        </div>
-        <!-- management -->
-        <div class="w3-container" id="management" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Consent Management</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
-            <p></p>
-            <p>
-            </p>
-        </div>
-        <!-- demo -->
-        <div class="w3-container" id="demo" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Demo</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
-            <p>Demo for our project</p>
-            <p><a href="http://54.92.202.202/"> Site Link</a>
-            </p>
-            <p></p>
-        </div>
-        <!-- results -->
-        <div class="w3-container" id="results" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Results</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
-            <p>Results of our project</p>
-            <p></a>
-            </p>
-            <p></p>
+            <p><br><b>Principal investigator</b>: Dr. Qusay H. Mahmoud</p>
+            <p><b>Link: </b><a href="faculty.ontariotechu.ca/mahmoud">faculty.ontariotechu.ca/mahmoud</a></p>
+
+            <div class="w3-container" id="img">
+                <p>Project sponsored by:</p>
+                <img src="https://services.priv.gc.ca/quiz//WET/gcweb-opc/assets/opc-blk-en.png"></img>
+
+            </div>
+
+
+
         </div>
         <!-- The Team -->
         <div class="w3-container" id="team" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Team</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Team</b></h1>
+            <hr style="width:50px;border:1px solid indigo" class="w3-round">
             <p>Team:</p>
             <p>
             </p>
@@ -101,56 +92,96 @@
             <div class="w3-row-padding w3-grayscale">
                 <div class="w3-col m4 w3-margin-bottom">
                     <div class="w3-light-grey">
-                        <img style="width:100%">
                         <div class="w3-container">
-                            <h3></h3>
+                            <h3>Dr. Qusay H. Mahmoud</h3>
                             <p class="w3-opacity"></p>
-                            <p></p>
+                            <p>Role: Principal Investigator</p>
                         </div>
                     </div>
                 </div>
-                <div class="w3-row-padding w3-grayscale">
-                    <div class="w3-col m4 w3-margin-bottom">
-                        <div class="w3-light-grey">
-                            <img style="width:100%">
-                            <div class="w3-container">
-                                <h3></h3>
-                                <p class="w3-opacity"></p>
-                                <p></p>
-                            </div>
+
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <div class="w3-container">
+                            <h3>Abdul Zainul Abedin </h3>
+                            <p class="w3-opacity"></p>
+                            <p>Role: Research Assistant</p>
                         </div>
                     </div>
-                    <div class="w3-row-padding w3-grayscale">
-                        <div class="w3-col m4 w3-margin-bottom">
-                            <div class="w3-light-grey">
-                                <img style="width:100%">
-                                <div class="w3-container">
-                                    <h3></h3>
-                                    <p class="w3-opacity"></p>
-                                    <p></p>
-                                </div>
-                            </div>
+                </div>
+
+                <div class="w3-col m4 w3-margin-bottom">
+                    <div class="w3-light-grey">
+                        <div class="w3-container">
+                            <h3>Thayan Sivathevan</h3>
+                            <p class="w3-opacity"></p>
+                            <p>Role: Research Assistant</p>
                         </div>
                     </div>
                 </div>
 
             </div>
-        </div>
-        <!-- Contact -->
-        <div class="w3-container" id="contact" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-red"><b>Contact Us</b></h1>
-            <hr style="width:50px;border:5px solid red" class="w3-round">
-            <p>Contact Details:</p>
 
         </div>
+
+
+        <!-- 
+        
+        <div class="w3-container" id="blockchain" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Blockchain</b></h1>
+            <hr style="width:50px;border:1px solid indigo" class="w3-round">
+            <p></p>
+            <p>
+            </p>
+        </div>
+       
+        <div class="w3-container" id="management" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Consent Management</b></h1>
+            <hr style="width:50px;border:1px solid indigo" class="w3-round">
+            <p></p>
+            <p>
+            </p>
+        </div> -->
+        <!-- demo -->
+        <div class="w3-container" id="demo" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Demo</b></h1>
+            <hr style="width:50px;border:1px solid indigo" class="w3-round">
+            <p>Demo for our project</p>
+            <p><a href="http://54.92.202.202/"> Site Link</a>
+            </p>
+            <p></p>
+        </div>
+        <!-- results -->
+        <div class="w3-container" id="results" style="margin-top:75px">
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Results</b></h1>
+            <hr style="width:50px;border:1px solid indigo" class="w3-round">
+            <p>Results of our project</p>
+            <p></a>
+            </p>
+            <p></p>
+        </div>
+
+
+        <!-- Contact -->
+        <div class="w3-container" id="contact" style="margin-top:75px">
+
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Contact Us</b></h1>
+            <hr style="width:50px;border:1px solid indigo" class="w3-round">
+            <p>If you have any questions about this project, please contact Dr. Q. Mahmoud</p>
+            <p><b>Email: </b>qusay.mahmoud@ontariotechu.ca</p>
+
+        </div>
+
     </div>
 
     <!-- End page content -->
 
 
     <!-- W3.CSS Container -->
-    <div id="bottom" class="w3-light-grey w3-container w3-padding-32">
-        <p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
+
+    <div id="bottom" class="w3-light-grey w3-container ">
+
+        <p class="w3-right">Poweindigo by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS"
                 target="_blank" class="w3-hover-opacity">w3.css</a></p>
     </div>
 
@@ -164,8 +195,8 @@
         function w3_openLink(id) {
             console.log(id)
             document.getElementById("home").style.display = "none"
-            document.getElementById("blockchain").style.display = "none"
-            document.getElementById("management").style.display = "none"
+            // document.getElementById("blockchain").style.display = "none"
+            // document.getElementById("management").style.display = "none"
             document.getElementById("demo").style.display = "none"
             document.getElementById("results").style.display = "none"
             document.getElementById("team").style.display = "none"
