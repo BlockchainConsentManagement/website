@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>Temp</title>
+<title>ConsentBlock</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
 <link rel="stylesheet" href="css.css">
 
-<body onload="w3_openLink('home')">
+<body onload="onStart()">
 
     <!-- Sidebar/menu -->
     <nav class="w3-sidebar w3-indigo w3-collapse w3-top w3-large w3-padding"
@@ -15,18 +15,15 @@
         <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
             style="width:100%;font-size:22px">Close Menu</a>
         <div class="w3-container">
-            <h3 class="w3-padding-64"><b>Temp</b></h3>
+            <h3 class="w3-padding-64"><b>ConsentBlock</b></h3>
         </div>
         <div class="w3-bar-block">
             <a href="#home" id="linkhome" onclick="w3_openLink('home')"
                 class="w3-bar-item w3-button w3-hover-white w3-active-indigo">Home</a>
             <a href="#team" id="linkteam" onclick="w3_openLink('team')"
                 class="w3-bar-item w3-button w3-hover-white">Team</a>
-            <!-- <a href="#blockchain" id="linkblockchain" onclick="w3_openLink('blockchain')"
-                class="w3-bar-item w3-button w3-hover-white">Blockchain</a>
-            <a href="#management" id="linkmanagement" onclick="w3_openLink('management')"
-                class="w3-bar-item w3-button w3-hover-white">Consent
-                Management</a> -->
+            <a href="#results" id="linkresults" onclick="w3_openLink('design')"
+                class="w3-bar-item w3-button w3-hover-white">Design</a>
             <a href="#demo" id="linkdemo" onclick="w3_openLink('demo')"
                 class="w3-bar-item w3-button w3-hover-white">Demo</a>
             <a href="#results" id="linkresults" onclick="w3_openLink('results')"
@@ -40,7 +37,7 @@
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
-        <span>Temp</span>
+        <span>ConsentBlock</span>
     </header>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -54,7 +51,7 @@
             <h1 class="w3-jumbo"><b></b></h1>
             <h1 class="w3-xxxlarge w3-text-indigo"><b>Home</b></h1>
             <hr style="width:50px;border:1px solid indigo" class="w3-round">
-            <h2 class="w3-xlarge w3-text-indigo">Title of project: Exploring Blockchain for Consent and Privacy Data
+            <h2 class="w3-xlarge w3-text-indigo">Exploring Blockchain for Consent and Privacy Data
                 Management</h2>
             <p>The objective of this project is to explore blockchain technology and experiment with it for enhanced
                 data security and personal information management for individuals, corporations, government entities,
@@ -68,8 +65,8 @@
                 application programming interfaces, and will produce a proof of concept prototype of the proposes
                 platform.</p>
 
-            <p><br><b>Principal investigator</b>: Dr. Qusay H. Mahmoud</p>
-            <p><b>Link: </b><a href="faculty.ontariotechu.ca/mahmoud">faculty.ontariotechu.ca/mahmoud</a></p>
+            <p><b>Principal investigator: </b><a href="https://faculty.ontariotechu.ca/mahmoud/"> Dr. Qusay H.
+                    Mahmoud</a></p>
 
             <div class="w3-container" id="img">
                 <p>Project sponsored by:</p>
@@ -95,7 +92,7 @@
                         <div class="w3-container">
                             <h3>Dr. Qusay H. Mahmoud</h3>
                             <p class="w3-opacity"></p>
-                            <p>Role: Principal Investigator</p>
+                            <p>Principal Investigator</p>
                         </div>
                     </div>
                 </div>
@@ -105,7 +102,7 @@
                         <div class="w3-container">
                             <h3>Abdul Zainul Abedin </h3>
                             <p class="w3-opacity"></p>
-                            <p>Role: Research Assistant</p>
+                            <p>Research Assistant</p>
                         </div>
                     </div>
                 </div>
@@ -115,7 +112,7 @@
                         <div class="w3-container">
                             <h3>Thayan Sivathevan</h3>
                             <p class="w3-opacity"></p>
-                            <p>Role: Research Assistant</p>
+                            <p>Research Assistant</p>
                         </div>
                     </div>
                 </div>
@@ -125,24 +122,119 @@
         </div>
 
 
-        <!-- 
-        
-        <div class="w3-container" id="blockchain" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-indigo"><b>Blockchain</b></h1>
+        <div class="w3-container" id="design" style="margin-top:80px">
+            <h1 class="w3-jumbo"><b></b></h1>
+            <h1 class="w3-xxxlarge w3-text-indigo"><b>Design</b></h1>
             <hr style="width:50px;border:1px solid indigo" class="w3-round">
-            <p></p>
+            <h2 class="w3-xlarge w3" style="text-align: center;"><b>Data Privacy Using Blockchain</b></h2>
+            <br>
+            <h3>Problem Overview</h3>
+            <p>The goal of this project is to develop a blockchain based solution to enable the monitoring of
+                access to personal data.
+                As consumers have become increasingly interested in protecting their personal data and
+                governments have started implementing regulations to ensure that consumers still retain control
+                over their data, consent management has become an important topic of discussion. Consent
+                management is the process of gaining a user’s permission before their data is collected and
+                stored <a href="#ref1">[1]</a>.
+                Blockchain is a technology that provides a reliable and secure ledger of transactions. This
+                consists of blocks chained together, with each block containing some data, the timestamp as
+                well as a hash of the previous block <a href="#ref2">[2]</a> . This concept was first devised by Satoshi
+                Nakamota, the
+                creator of Bitcoin.</p>
+            <br>
+            <h3>Proposed Solution</h3>
             <p>
+                The solution that we are proposing not only implements a traditional consent management
+                system where consumers approve any data collection, but also allows consumers to have full
+                control of their data. Blockchain technology is leveraged for integrity and security of the consent
+                management. We have also implemented privacy by design <a href="#ref3">[3]</a> throughout the design and
+                architecture of this solution to ensure that data privacy is at the front and centre of this solution.
+                We have worked on a solution where data privacy is the default setting and implemented a
+                preventative approach to privacy concerns.
+                Consumers and users can sign up for this consent management system and provide their
+                personal information. This information is securely stored in an encrypted database and can be
+                deleted upon the user’s request, this ensures respect for user privacy as outlined in the privacy
+                by design principles <a href="#ref3">[3]</a> . Once a user grants an organization to access their
+                personal data, an
+                organization can then access the relevant data in the consent management system. However,
+                each access is logged and visible for the user to see, this applies the visibility and transparency
+                principle of privacy by design <a href="#ref3">[3]</a> . Organizations may not store or directly pass on
+                this information
+                to other organizations. If an organization must pass a user’s data to another organization, they
+                may pass only the user’s email address, which the second organization can use to request
+                access to the user’s information from the user themselves through the consent management
+                system. User’s have the ability to revoke data access for a specific organization at any time.
             </p>
+            <br>
+            <h3>Architecture</h3>
+            <p>
+                This solution uses centralized Hyperledger Fabric blockchain to keep track of access to
+                personal data. The personal data itself will reside on a database. Each access to the database
+                itself will be logged on to the blockchain. End users will be able to view the blockchain itself and
+                view who accessed their data and when it was accessed. <a href="#figure1">Figure 1</a> shows the overall
+                design and
+                architecture of this solution.
+            </p>
+            <div class="w3-container img">
+                <img id="figure1" src="./figure1.PNG"></img>
+                <label for="figure1">Figure 1: Overview of the architecture</label>
+            </div>
+            <br>
+            <p>
+                As shown in <a href="#figure2">figure 2</a>, users can register for the service using the end user
+                portal. This will allow
+                users to send their data to the API which will then securely store it in a DynamoDB table on
+                AWS.
+            </p>
+            <div class="w3-container img">
+                <img id="figure2" src="./figure2.JPG"></img>
+                <label for="figure2">Figure 2: User signup</label>
+            </div>
+            <br>
+            <p>
+                Once a user is signed up on the platform, an organization has the ability to request access to
+                the users data. Generally, this will be done when a user signs up on the organization’s platform.
+                Rather than giving their personal information directly to the organization, users will give the
+                organization their email address. Once the organization requests access to the user’s data, the
+                user can log into the portal and view the request. The user has the option to approve or reject
+                this request. Approving the request will then allow the organization to access the data. This
+                entire process is shown in <a href="#figure3">figure 3</a>.
+            </p>
+            <div class="w3-container img">
+                <img id="figure3" src="./figure3.JPG"></img>
+                <label for="figure3">Figure 3: Approving access request</label>
+            </div>
+            <br>
+            <p>
+                Once the organization has been granted access to the user’s data, they have the ability to
+                access it at any point. As shown in <a href="#figure4">figure 4</a>, when the organization accesses a
+                user’s data, an
+                access log is automatically generated and written to the blockchain. This automatic logging
+                ensures high accountability.
+            </p>
+            <div class="w3-container img">
+                <img id="figure4" src="./figure4.JPG"></img>
+                <label for="figure4">Figure 4. Organization accessing user’s data</label>
+            </div>
+            <br>
+            <br>
+            <h3>References</h3>
+            <p id="ref1">[1] IBM Knowledge Center,
+                <a
+                    href="https://www.ibm.com/support/knowledgecenter/SSWSR9_11.6.0/com.ibm.mdmhs.overview.doc/consentmanagementoverview.html">www.ibm.com/support/knowledgecenter/SSWSR9_11.6.0/com.ibm.mdmhs.overview.doc/conse
+                    ntmanagementoverview.html</a>.
+            </p>
+            <br>
+            <p id="ref2">[2] Javed, Ibrahim Tariq, et al. “PETchain: A Blockchain-Based Privacy Enhancing Technology.”
+                IEEE Access, vol. 9, 2021, pp. 41129–41143., doi:10.1109/access.2021.3064896.</p>
+            <br>
+            <p id="ref3">[3] Cavoukian, Ann. “Privacy by Design The 7 Foundational Principles.” Information and Privacy
+                Commissioner of Ontario, Aug. 2009.</p>
         </div>
-       
-        <div class="w3-container" id="management" style="margin-top:75px">
-            <h1 class="w3-xxxlarge w3-text-indigo"><b>Consent Management</b></h1>
-            <hr style="width:50px;border:1px solid indigo" class="w3-round">
-            <p></p>
-            <p>
-            </p>
-        </div> -->
-        <!-- demo -->
+
+
+
+
         <div class="w3-container" id="demo" style="margin-top:75px">
             <h1 class="w3-xxxlarge w3-text-indigo"><b>Demo</b></h1>
             <hr style="width:50px;border:1px solid indigo" class="w3-round">
@@ -168,7 +260,7 @@
             <h1 class="w3-xxxlarge w3-text-indigo"><b>Contact Us</b></h1>
             <hr style="width:50px;border:1px solid indigo" class="w3-round">
             <p>If you have any questions about this project, please contact Dr. Q. Mahmoud</p>
-            <p><b>Email: </b>qusay.mahmoud@ontariotechu.ca</p>
+            <p><b>Email: </b>qusay.mahmoud AT ontariotechu.ca</p>
 
         </div>
 
@@ -195,16 +287,18 @@
         function w3_openLink(id) {
             console.log(id)
             document.getElementById("home").style.display = "none"
-            // document.getElementById("blockchain").style.display = "none"
-            // document.getElementById("management").style.display = "none"
             document.getElementById("demo").style.display = "none"
             document.getElementById("results").style.display = "none"
             document.getElementById("team").style.display = "none"
+            document.getElementById("design").style.display = "none"
             document.getElementById("contact").style.display = "none"
 
             document.getElementById("mySidebar").style.display = "block";
             document.getElementById("myOverlay").style.display = "block";
             document.getElementById(id).style.display = "block";
+            if (window.innerWidth < 1000) {
+                w3_close();
+            }
         }
         function w3_close() {
             document.getElementById("mySidebar").style.display = "none";
@@ -217,6 +311,14 @@
             document.getElementById("modal01").style.display = "block";
             var captionText = document.getElementById("caption");
             captionText.innerHTML = element.alt;
+        }
+
+        function onStart() {
+            if (window.innerWidth < 1000) {
+                w3_close();
+                console.log(window.innerWidth)
+            }
+            w3_openLink("home")
         }
     </script>
 
