@@ -31,8 +31,8 @@ body {
     text-align: center;
 }
 #img img{
-    width:100%;
-    height: auto;
+    width:100% !important;
+    height: auto !important;
 }
 .img{
     width:85%;
