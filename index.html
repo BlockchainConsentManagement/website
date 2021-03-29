@@ -386,7 +386,10 @@
             if (window.innerWidth < 1000) {
                 w3_close();
             }
-
+            if(location.hash){
+                console.log(location.hash)
+                w3_openLink(location.hash.replace('#',''))
+            }
         }
     </script>
 
