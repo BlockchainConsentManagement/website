@@ -185,14 +185,14 @@
             <br>
             <h3>Proposed Solution</h3>
             <p>
-                The solution that we are proposing not only implements a traditional consent management
+                The solution that we are proposing not only supports a traditional consent management
                 system where consumers approve any data collection, but also allows consumers to have full
                 control of their data. Blockchain technology is leveraged for integrity and security of the consent
                 management. We have also implemented privacy by design <a href="#ref3">[3]</a> throughout the design and
                 architecture of this solution to ensure that data privacy is at the front and centre of this solution.
                 We have worked on a solution where data privacy is the default setting and implemented a
                 preventative approach to privacy concerns.
-                Consumers and users can sign up for this consent management system and provide their
+                Users can sign up for this consent management system and provide their
                 personal information. This information is securely stored in an encrypted database and can be
                 deleted upon the user’s request, this ensures respect for user privacy as outlined in the privacy
                 by design principles <a href="#ref3">[3]</a> . Once a user grants an organization to access their
@@ -205,6 +205,8 @@
                 may pass only the user’s email address, which the second organization can use to request
                 access to the user’s information from the user themselves through the consent management
                 system. User’s have the ability to revoke data access for a specific organization at any time.
+                
+                <p>In the proposed solution, we have a permissioned blockchain – so an administrator (or a group of admins) will need to approve adding data to the blockchain. The blockchain admin can be a third party organization / hospital / government agency. In this proof of concept implementation, there is a single administrator who is the maintainer of this blockchain and approval of adding data to the blockchain is automatic as implemented by APIs called by authorized clients.
             </p>
             <br>
             <h3>Architecture</h3>
