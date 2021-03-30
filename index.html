@@ -34,6 +34,14 @@
         </div>
     </nav>
 
+
+    <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
     <!-- Top menu on small screens -->
     <header class="w3-container w3-top w3-hide-large w3-black w3-xlarge w3-padding">
         <a href="javascript:void(0)" class="w3-button w3-black w3-margin-right" onclick="w3_open()">☰</a>
@@ -239,7 +247,7 @@
                     architecture of this solution.
                 </p>
                 <div class="w3-container img">
-                    <img id="figure1" src="./figure1.JPG"></img>
+                    <img id="figure1" src="./figure1.JPG" alt="Figure 1" onclick="onClick(this)"></img>
                     <label for="figure1">Figure 1: Overview of the architecture</label>
                 </div>
                 <br>
@@ -250,7 +258,7 @@
                     AWS.
                 </p>
                 <div class="w3-container img">
-                    <img id="figure2" src="./figure2.JPG"></img>
+                    <img id="figure2" src="./figure2.JPG" alt="Figure 2" onclick="onClick(this)"></img>
                     <label for="figure2">Figure 2: User signup</label>
                 </div>
                 <br>
@@ -264,7 +272,7 @@
                     entire process is shown in <a href="#figure3">Figure 3</a>.
                 </p>
                 <div class="w3-container img">
-                    <img id="figure3" src="./figure3.JPG"></img>
+                    <img id="figure3" src="./figure3.JPG" alt="Figure 3" onclick="onClick(this)"></img>
                     <label for="figure3">Figure 3: Approving access request</label>
                 </div>
                 <br>
@@ -277,7 +285,7 @@
                     ensures high accountability.
                 </p>
                 <div class="w3-container img">
-                    <img id="figure4" src="./figure4.JPG"></img>
+                    <img id="figure4" src="./figure4.JPG" alt="Figure 4" onclick="onClick(this)"></img>
                     <label for="figure4">Figure 4. Organization accessing user’s data</label>
                 </div>
                 <br>
@@ -419,7 +427,7 @@
             if (location.hash) {
                 console.log(location.hash.includes("ref") || location.hash.includes("figure"))
                 if (location.hash.includes("ref") || location.hash.includes("figure")) {
-                    
+
                     w3_openLink("design")
                 }
                 else {
