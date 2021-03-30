@@ -417,9 +417,16 @@
                 w3_close();
             }
             if (location.hash) {
-
-                w3_openLink(location.hash.replace('#', ''))
+                console.log(location.hash.includes("ref") || location.hash.includes("figure"))
+                if (location.hash.includes("ref") || location.hash.includes("figure")) {
+                    
+                    w3_openLink("design")
+                }
+                else {
+                    w3_openLink(location.hash.replace('#', ''))
+                }
             }
+
             else {
                 window.location.href = window.location.href + "#home"
                 w3_openLink("home")
