@@ -37,12 +37,12 @@ body {
     text-align: center;
 }
 #img img{
-    width:100% !important;
+    max-width:65% !important;
     height: auto !important;
 }
 .img img{
-    max-width:100% !important;
-    height: auto !important;
+    max-width:100% ;
+    height: auto;
 }
 
 .video-container {
@@ -82,9 +82,7 @@ img{
 }
 .w3-main{
     overflow: auto;
-    margin-bottom: 100px;
-
-   
+    margin-bottom: 50px;
 }
 label{
     text-align:center;   
